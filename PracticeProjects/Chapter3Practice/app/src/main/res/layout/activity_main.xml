@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="가나다라 https://www.google.com 마바사 a@a.com 아자차카타 02-1234-5678"
+        android:autoLink="web|email|phone"
+        android:typeface="sans"
+        android:id="@+id/text1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sentence"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:layout_marginTop="16dp"
+        android:id="@+id/text2" />
+
+    <ImageView
+        android:src="@drawable/android"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="전화번호 입력"
+        android:inputType="phone"
+        android:layout_marginTop="16dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="is unChcked"
+        android:id="@+id/checkbox"
+        android:layout_marginTop="16dp"/>
+
+
+</LinearLayout>
