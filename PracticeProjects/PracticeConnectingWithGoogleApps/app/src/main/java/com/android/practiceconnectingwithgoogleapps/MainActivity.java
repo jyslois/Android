@@ -50,10 +50,8 @@ public class MainActivity extends AppCompatActivity {
                         // 화면에 이미지의 사이즈를 줄여서 출력하기 위한 사이즈 계산
                         // 밑에 정의되어 있는 calculateInSampleSize 콜하기
                        int calRatio = calculateInSampleSize(
-
-                                result.getData().getData(),
                                // 혹은 파일 url값 - 카메라 앱에 공개한 우리의 파일에 저장된 데이터의 url
-//                                Uri.fromFile(new File(filePath)),
+                                Uri.fromFile(new File(filePath)),
                                 // 화면에 찍고자 하는 사이즈
                                 getResources().getDimensionPixelSize(R.dimen.imgSize),
                                 getResources().getDimensionPixelSize(R.dimen.imgSize)
